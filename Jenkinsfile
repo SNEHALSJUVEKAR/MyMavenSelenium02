@@ -11,7 +11,7 @@ pipeline {
             steps {
                 git branch: 'master',
                     url: 'https://github.com/SNEHALSJUVEKAR/MyMavenSelenium02.git',
-                    credentialsId: 'github-token'
+                    credentialsId: 'GitHubCredential'   // FIXED
             }
         }
 
