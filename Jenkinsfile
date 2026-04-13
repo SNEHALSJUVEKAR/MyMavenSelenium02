@@ -11,7 +11,7 @@ pipeline {
             steps {
                 git branch: 'master',
                     url: 'https://github.com/SNEHALSJUVEKAR/MyMavenSelenium02.git',
-                    credentialsId: 'GitHubCredential'   // FIXED
+                    credentialsId: 'GitHubCredential'
             }
         }
 
@@ -26,20 +26,14 @@ pipeline {
                 sh 'mvn test'
             }
         }
-
-        stage('Run Application') {
-            steps {
-                sh 'java -jar target/MyMavenSeleniumApp02-1.0-SNAPSHOT.jar'
-            }
-        }
     }
 
     post {
         success {
-            echo 'Build and deployment successful!'
+            echo ' Build and Test successful!'
         }
         failure {
-            echo 'Build failed!'
+            echo ' Build failed!'
         }
     }
 }
