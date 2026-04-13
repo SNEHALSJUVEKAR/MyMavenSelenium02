@@ -1,0 +1,16 @@
+# Maven target folder
+target/
+
+# Logs
+*.log
+
+# Compiled class files
+*.class
+
+# IDE files (recommended)
+.idea/
+*.iml
+.vscode/
+
+# OS files
+.DS_Store
