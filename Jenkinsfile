@@ -9,9 +9,9 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'master', 
-                    url: 'https://github.com/snehalsjuvekar/MyMavenSeleniumApp02.git',
-                    credentialsId: 'github-token'   //MUST MATCH YOUR JENKINS ID
+                git branch: 'master',
+                    url: 'https://github.com/SNEHALSJUVEKAR/MyMavenSelenium02.git',
+                    credentialsId: 'github-token'
             }
         }
 
